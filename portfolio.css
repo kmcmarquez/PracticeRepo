@@ -1,3 +1,6 @@
+
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -10,8 +13,31 @@ body {
 }
 
 
-#navbarNav > ul li > a:link {
+#navbarNav > ul li > .nav-link {
     color: #EAEAEA;
+    text-align: center;
+    font-family: 'Futura PT', sans-serif;
+    
+                                                
+}
+
+.navbar-brand {
+    color: #EAEAEA;
+    font-family: 'Futura PT', sans-serif;
+}
+
+.navbarcolor {
+    background-color: #816C61;
+    
+}
+
+.menu {
+    margin-left: 40%;
 
 }
 
+.image-fluid {
+    display: flex;
+
+
+}
