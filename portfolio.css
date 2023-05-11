@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: #EAEAEA;
+
+}
+
+
+#navbarNav > ul li > a:link {
+    color: #EAEAEA;
+
+}
+
