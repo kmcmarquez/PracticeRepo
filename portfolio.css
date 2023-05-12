@@ -1,15 +1,11 @@
-
-
-
 * {
     margin: 0px;
     padding: 0px;
 
 }
 
-body {
-    background-color: #EAEAEA;
-
+body, html {
+    height: 100%;
 }
 
 
@@ -17,13 +13,19 @@ body {
     color: #EAEAEA;
     text-align: center;
     font-family: 'Futura PT', sans-serif;
-    
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-bottom: 0px;
+
                                                 
 }
+
+
 
 .navbar-brand {
     color: #EAEAEA;
     font-family: 'Futura PT', sans-serif;
+   
 }
 
 .navbarcolor {
@@ -32,12 +34,228 @@ body {
 }
 
 .menu {
-    margin-left: 40%;
+    margin-left: 35%;
+    
 
 }
 
-.image-fluid {
+.bg {
+  /* Full height */
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}  
+
+.bgpage {
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #382626;
+}
+
+.memoji {
+    
+    height: 20vh;
+    width: 20vh;
+    padding: 2px;
+    margin-left: 30px;
+
+
+}
+
+.container1 {
+    text-align: center;
+    font-family: 'Futura PT', sans-serif;
+    margin-top: 50px;
+    font-size: 80px;
+    color: #806443;
+    
+
+}
+
+
+/*  DITO NA NATATAPOS ANG LAHAT      */
+
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #e1ddd4;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #e1ddd4;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  /* CARD CONTAINER FOR SOCIALS TEST */
+
+  .container {
+    min-height: 100vh;
+    padding: 20px 0;
     display: flex;
+    align-items: center;
+    justify-content: center
+}
 
+p {
+    margin: 0px
+}
 
+.card {
+    width: 280px;
+    height: 520px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    overflow: hidden
+}
+
+.card .backgroundEffect {
+    bottom: 0;
+    height: 0px;
+    width: 100%
+}
+
+.card:hover {
+    color: #fff;
+    transform: scale(1.025);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
+}
+
+.card:hover .backgroundEffect {
+    bottom: 0;
+    height: 320px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: #816c61;
+    animation: popBackground 0.3s ease-in
+}
+
+@keyframes popBackground {
+    0% {
+        height: 20px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%
+    }
+
+    50% {
+        height: 80px;
+        border-top-left-radius: 75%;
+        border-top-right-radius: 75%
+    }
+
+    75% {
+        height: 160px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 85%
+    }
+
+    100% {
+        height: 320px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%
+    }
+}
+
+.card .pic {
+    position: relative
+}
+
+.card .pic img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover
+}
+
+.card .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 70px;
+    background-color: #816c61;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    transition: all ease
+}
+
+.card .date .day {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.card .date .month,
+.card .date .year {
+    font-size: 10px
+}
+
+.card .text-muted {
+    font-size: 12px
+}
+
+.card:hover .text-muted {
+    color: #fff !important
+}
+
+.card .content {
+    padding: 0 20px
+}
+
+.card .content .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: #816c61;
+    border-radius: 25px;
+    font-size: 12px;
+    border: none
+}
+
+.card:hover .content .btn {
+    background: #fff;
+    color: #816c61;
+    box-shadow: #0000001a 0px 3px 5px
+}
+
+.card .content .btn .fas {
+    font-size: 10px;
+    padding-left: 5px
+}
+
+.card .content .foot .admin {
+    color: #816c61;
+    font-size: 12px
+}
+
+.card:hover .content .foot .admin {
+    color: #fff
+}
+
+.card .content .foot .icon {
+    font-size: 12px
 }
